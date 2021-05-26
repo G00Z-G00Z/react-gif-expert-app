@@ -1,12 +1,11 @@
 import React, { Fragment, useState } from 'react'
-import PropTypes from 'prop-types'
 import AddCategory from './components/AddCategory'
 import GifGrid from './components/GifGrid'
 
 const GiffExpertApp = props => {
 
 
-    const [categories, setCategories] = useState([])
+    const [categories, setCategories] = useState(['One Punch Man'])
 
     return <Fragment>
         <h2>GiffExpertApp</h2>
