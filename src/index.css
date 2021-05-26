@@ -20,3 +20,25 @@ input {
 	width: 100%;
 	color: grey;
 }
+
+.card-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card {
+	border: 1px solid grey;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.card p {
+	padding: 2em;
+	text-align: center;
+}
+
+.card img {
+	max-height: 20vh;
+}

@@ -8,16 +8,19 @@ const AddCategory = ({ setCategories }) => {
     const handleInputChange = (e) => {
         const newCat = e.target.value
         setInputValue(newCat)
+
     }
 
     const handleSubmit = e => {
         e.preventDefault()
         let nuevaCat = inputValue.trim()
-        if (nuevaCat)
+        if (nuevaCat) {
             setCategories(prevList =>
                 (!prevList.find(element => element === nuevaCat)) ?
-                    [...prevList, inputValue] :
+                    [inputValue, ...prevList] :
                     prevList)
+
+        }
     }
 
 
